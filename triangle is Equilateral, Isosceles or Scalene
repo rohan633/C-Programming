@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+  int sidea,sideb,sidec;
+  printf(" Enter the three side triagle");
+  scanf("%d %d %d",&sidea,&sideb,&sidec);
+  
+  if(sidea==sideb && sideb==sidec)
+  {
+      printf(" This is equilibrium Triaglel \n ");
+  }
+  else if (sidea==sideb || sidea==sidec || sideb==sidec)
+  {
+      printf(" This is isosceles triangle \n ");
+  }
+  else 
+  {
+      printf("This is a scalene triangle.\n"); 
+  }
+  
+  return 0;
+    
+}
