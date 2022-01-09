@@ -1,0 +1,32 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int Buy,Sell,c,d;
+    printf(" Enter the Product Buying Price");
+    scanf ("%d",&Buy);
+    
+    printf(" Enter the Product Selling Price ");
+    scanf("%d",&Sell);
+    
+    
+    if (Buy > Sell)
+    {
+        c = Buy - Sell;
+        scanf("%d",&c);
+        printf("\n This transaction in Loss is :%d\n",c);
+    }
+    else if (Buy < Sell)
+    {
+        d = Sell - Buy;
+        scanf("%d",&d);
+        printf(" This transaction in Booked Profit amount is :%d\n ",d);
+    }
+    else 
+    {
+        printf(" Your Transition in No Loss And Not Profit ");
+    }
+
+    return 0;
+}
